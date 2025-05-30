@@ -11,7 +11,7 @@ import Services from "@/components/services";
 
 export default function Home() {
   return (
-    <section className="pl-0 lg:pl-6">
+    section className="pl-0 lg:pl-6">
       <Banner />
       <Record />
       <ProductCap />
