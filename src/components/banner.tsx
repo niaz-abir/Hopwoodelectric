@@ -19,7 +19,7 @@ export function Banner() {
       <div className="grid backdrop-blur-xl p-6 rounded-md grid-cols-1  mt-10 items-center justify-items-center md:grid-cols-2">
         <div className="flex flex-col items-center gap-y-5 text-center md:items-start md:text-start">
           <h1 className="text-[clamp(2rem,_4vw+1rem,_4rem)] font-extrabold capitalize leading-tight tracking-tight">
-            Premium Custom Apparel for Your Brand & Business.
+            Premium Custom Apparel for Your Brand & Business
           </h1>
           <p className="max-w-[35rem] text-lg leading-relaxed text-foreground-500">
             <span className="font-bold">Clothings Bee </span>
