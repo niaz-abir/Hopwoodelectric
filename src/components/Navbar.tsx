@@ -109,7 +109,7 @@ const Navbar = () => {
                   href="tel:+1 716 406 7972"
                   className="p-2 flex items-center gap-2 text-[20px] lg:w-full bg-gradient-to-r from-[#da7c41] to-[#FD3B29]  w-56 text-black rounded md:border-0"
                 >
-                  <MdOutlinePermPhoneMsg /> (716) 406 7972
+                  <MdOutlinePermPhoneMsg /> +1 (425) 548-4872
                 </a>
               </li>
             </ul>

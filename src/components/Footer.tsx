@@ -54,7 +54,7 @@ const Footer = () => {
             Lynnwood, Washington 98087, United States.
           </p>
           <h6 className="font-semibold text-[16px] pt-2">Number:</h6>
-          <p className="text-[20px]">(716) 406 7972 </p>
+          <p className="text-[20px]">+1 (425) 548-4872 </p>
         </nav>
       </footer>
       <div className="flex justify-between p-2 mt-4">
