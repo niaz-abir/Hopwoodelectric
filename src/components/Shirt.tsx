@@ -12,7 +12,7 @@ const Shirt = () => {
   const allTShirts = [
     {
       id: 2,
-      name: "Henley TShirt",
+      name: "Clothings Bee softstyle t-shirt",
       no: "02",
       image: image1,
       price: "$8.99",
@@ -21,7 +21,7 @@ const Shirt = () => {
     },
     {
       id: 4,
-      name: "Crew New",
+      name: "Clothings Bee softstyle t-shirt",
       no: "04",
       image: image2,
       price: "$6.99",
@@ -30,7 +30,7 @@ const Shirt = () => {
     },
     {
       id: 5,
-      name: "Scoop Next",
+      name: "Clothings Bee softstyle t-shirt",
       no: "05",
       image: image3,
       price: "$5.49",
@@ -39,7 +39,7 @@ const Shirt = () => {
     },
     {
       id: 2,
-      name: "Henley TShirt",
+      name: "Clothings Bee softstyle t-shirt",
       no: "02",
       image: image1,
       price: "$5.49",
@@ -90,30 +90,30 @@ const Shirt = () => {
               ></Image>
 
               <motion.h1
-                className=" flex  rounded-md gap-2 pt-8  text-[20px] lg:text-[24px] items-center"
+                className=" flex   font-bold rounded-md gap-2 pt-8  text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" pl-2 rounded-md font-bold">Each Price :</span>
-                {tShirt?.price}
+                <span className=" pl-2 rounded-md font-bold"></span>
+                {tShirt?.name}
               </motion.h1>
 
               <motion.h1
-                className=" flex  rounded-md gap-2  text-[20px] lg:text-[24px] items-center"
+                className=" flex  rounded-md gap-2 pt-2   text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" pl-2 rounded-md font-bold">Quantity :</span>
+                <span className=" pl-4  rounded-md font-bold">Quantity :</span>
                 {tShirt?.quantity}
               </motion.h1>
 
-              <motion.h1
+              {/* <motion.h1
                 className=" flex  rounded-md gap-2  text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
@@ -125,7 +125,7 @@ const Shirt = () => {
                   Total Price :
                 </span>
                 {tShirt?.total}
-              </motion.h1>
+              </motion.h1> */}
 
               <div className="flex items-center gap-x-4 pt-4 ">
                 <Link href="order-now">

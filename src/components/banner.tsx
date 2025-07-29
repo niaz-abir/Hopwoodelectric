@@ -7,11 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Import your images
-import image1 from "../../public/images/newcarosuel (2).jpg";
-import image2 from "../../public/images/newcarosuel (3).jpg";
-import image3 from "../../public/images/newcarosuel (4).jpg";
-import image4 from "../../public/images/newcarosuel (5).jpg";
-import image5 from "../../public/images/newcarosuel (1).jpg";
+import image1 from "../../public/images/new.jpg";
+import image2 from "../../public/images/new.jpg";
+import image3 from "../../public/images/new.jpg";
+import image4 from "../../public/images/new.jpg";
+import image5 from "../../public/images/new.jpg";
 
 export function Banner() {
   return (

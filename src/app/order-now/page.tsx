@@ -81,7 +81,7 @@ const Order = () => {
     <section className="flex flex-col-reverse lg:flex-row gap-4 mt-8 max-w-7xl mx-auto">
       <div className="flex flex-col gap-4 p-4">
         <Image src={image1} height={450} width={450} alt="price" />
-        <Image src={image2} height={450} width={450} alt="price" />
+        {/* <Image src={image2} height={450} width={450} alt="price" /> */}
       </div>
       <div>
         <div className="text-black relative px-2 p-8 rounded-md w-[400px] lg:w-[800px] shadow-lg sm:rounded-3xl">

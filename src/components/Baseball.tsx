@@ -7,11 +7,11 @@ import image3 from "../../public/images/cap (3).jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductCap = () => {
+const BaseBall = () => {
   const allCaps = [
     {
       id: 2,
-      name: "Clothings Bee Trucker Hat",
+      name: "Clothings Bee Baseball Hat",
       no: "02",
       image: image1,
       price: "$12.00",
@@ -20,7 +20,7 @@ const ProductCap = () => {
     },
     {
       id: 4,
-      name: "Clothings Bee Trucker Hat",
+      name: "Clothings Bee Baseball Hat",
       no: "04",
       image: image2,
       price: "$10.00",
@@ -29,7 +29,7 @@ const ProductCap = () => {
     },
     {
       id: 5,
-      name: "Clothings Bee Trucker Hat",
+      name: "Clothings Bee Baseball Hat",
       no: "05",
       image: image3,
       price: "$9.00",
@@ -38,7 +38,7 @@ const ProductCap = () => {
     },
     {
       id: 6,
-      name: "Clothings Bee Trucker Hat",
+      name: "Clothings Bee Baseball Hat",
       no: "02",
       image: image1,
       price: "$8.00",
@@ -50,7 +50,7 @@ const ProductCap = () => {
   return (
     <section id="caps">
       <div className="text-center mb-14 mt-14 p-4">
-        <h1 className="font-bold text-center text-4xl">Our Trucker Hats</h1>
+        <h1 className="font-bold text-center text-4xl">Our Baseball Hats</h1>
         <p className="text-[18px] text-black">
           From enhancing your digital presence to creating impactful designs, we
           provide <br />
@@ -140,4 +140,4 @@ const ProductCap = () => {
   );
 };
 
-export default ProductCap;
+export default BaseBall;

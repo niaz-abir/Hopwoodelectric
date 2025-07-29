@@ -1,3 +1,4 @@
+import BaseBall from "@/components/Baseball";
 import Footer from "@/components/Footer";
 import Hoodie from "@/components/Hoodie";
 import ProductCap from "@/components/ProductCap";
@@ -15,6 +16,7 @@ export default function Home() {
       <Banner />
       <Record />
       <ProductCap />
+      <BaseBall />
       <Shirt />
       <Hoodie />
       <Services />
