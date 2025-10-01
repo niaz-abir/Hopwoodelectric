@@ -15,7 +15,7 @@ const Testimonial = () => {
       name: "Jane Doe",
       role: "Marketing",
       img: "https://randomuser.me/api/portraits/women/14.jpg",
-      text: "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+      text: " reprehenderit, veritatis harum et rerum.",
     },
     {
       name: "Yanick Doe",
@@ -59,7 +59,7 @@ const Testimonial = () => {
 
   return (
     <section id="review">
-      <section className="max-w-7xl mx-auto w-full px-10 py-10">
+      <section className="max-w-8xl mx-auto w-full px-10 py-10">
         <div
           className="text-gray-600 dark:text-gray-300 pt-8 dark:bg-gray-900"
           id="reviews"
