@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="max-w-8xl flex flex-wrap items-center  justify-between mx-auto p-4">
           <Link href="/">
             {" "}
-            <h1 className="font-bold text-3xl ml-2 lg:ml-8 flex gap-2 text-[#c00838] bg-[#e1dad6] p-2">
+            <h1 className="font-bold text-xl lg:text-3xl ml-2 lg:ml-8 flex gap-2 text-[#c00838] bg-[#e1dad6] p-2">
               <RiLightbulbFlashLine />
               Hopwood Electric
             </h1>
