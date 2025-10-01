@@ -4,140 +4,115 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Testimonial = () => {
+  const reviews = [
+    {
+      name: "Daniella Doe",
+      role: "Mobile dev",
+      img: "https://randomuser.me/api/portraits/women/12.jpg",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum quae quos illo earum ipsa doloribus nostrum minus libero aspernatur laborum cum, a suscipit, ratione ea totam ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+    },
+    {
+      name: "Jane Doe",
+      role: "Marketing",
+      img: "https://randomuser.me/api/portraits/women/14.jpg",
+      text: "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+    },
+    {
+      name: "Yanick Doe",
+      role: "Developer",
+      img: "https://randomuser.me/api/portraits/women/18.jpg",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+    },
+    {
+      name: "Jane Doe",
+      role: "Mobile dev",
+      img: "https://randomuser.me/api/portraits/women/2.jpg",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+    },
+    {
+      name: "Andy Doe",
+      role: "Manager",
+      img: "https://randomuser.me/api/portraits/women/62.jpg",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+    },
+    {
+      name: "Yanndy Doe",
+      role: "Customer",
+      img: "https://randomuser.me/api/portraits/women/19.jpg",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.",
+    },
+  ];
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2, // stagger each card
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+  };
+
   return (
-    <section>
-      <section className="max-w-5xl mx-auto w-full px-10 py-10">
-        <div className="flex items-center justify-center flex-col mb-8 gap-y-2 py-5">
-          <h2 className="text-2xl lg:text-4xl font-bold  text-center text-black">
-            Heres what our
-            <span className="text-[#FD3B29] "> customers</span> have to say
-          </h2>
-          <p className="text-[18px] font-medium text-black">
-            Discover how our service can benefit you have grow.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 w-full">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="border p-7 rounded-xl bg-[#e7dec7] drop-shadow-md border-neutral-800/50 col-span-2 flex flex-col gap-y-10 justify-between"
-          >
-            <div className="flex flex-col gap-y-3.5">
-              <p className="font-bold text-xl text-black">
-                Efficient customer support
-              </p>
-              <p className="font-medium text-black">
-                Exceptional service and support! The team quickly resolved our
-                IT issues and provided invaluable advice. Highly recommend!
+    <section id="review">
+      <section className="max-w-7xl mx-auto w-full px-10 py-10">
+        <div
+          className="text-gray-600 dark:text-gray-300 pt-8 dark:bg-gray-900"
+          id="reviews"
+        >
+          <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div className="text-center mb-14 mt-14 p-4">
+              <h1 className="font-bold pb-8 text-[#c00838] text-center text-4xl">
+                What Our Clients Say
+              </h1>
+              <p className="text-[18px] text-black">
+                Our customers are at the heart of everything we do. Here’s what
+                they have to say
+                <br /> about our service, reliability, and commitment to
+                quality.
               </p>
             </div>
-            <div className="flex flex-col">
-              <img
-                src="https://randomuser.me/api/portraits/women/43.jpg"
-                alt="Emily Smith"
-                className="h-10 w-10"
-              />
-              <p className="pt-2 text-sm font-semibold text-black">
-                Emily Smith
-              </p>
-              <p className="text-sm font-medium text-black">
-                Marketing Manager at Vivid Horizons
-              </p>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="border p-7 rounded-xl bg-[#e7dec7] drop-shadow-md border-neutral-800/50 col-span-3 flex flex-col gap-y-10 justify-between"
-          >
-            <div className="flex flex-col gap-y-3.5">
-              <p className="font-bold text-xl text-black">
-                Excellent product features
-              </p>
-              <p className="font-medium text-black">
-                Professional, reliable, and knowledgeable. They transformed our
-                IT infrastructure seamlessly and improved our overall
-                efficiency.
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <img
-                src="https://randomuser.me/api/portraits/men/34.jpg"
-                alt="Michael Johnson"
-                className="h-10 w-10"
-              />
-              <p className="pt-2 text-sm font-semibold text-black">
-                Michael Johnson
-              </p>
-              <p className="text-sm font-medium text-black">
-                CEO at Apex Dynamics
-              </p>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="border p-7 rounded-xl bg-[#e7dec7] drop-shadow-md border-neutral-800/50 col-span-3 flex flex-col gap-y-10 justify-between"
-          >
-            <div className="flex flex-col gap-y-3.5">
-              <p className="font-bold text-xl text-black">
-                Seamless integration process
-              </p>
-              <p className="font-medium text-black">
-                Fantastic experience! Their expertise in web development and
-                digital marketing significantly boosted our online presence.
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <img
-                src="https://randomuser.me/api/portraits/women/71.jpg"
-                alt="Sarah Brown"
-                className="h-10 w-10"
-              />
-              <p className="pt-2 text-sm font-semibold text-black">
-                Sarah Brown
-              </p>
-              <p className="text-sm font-medium text-black">
-                CTO at NexEra Ventures
-              </p>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="border p-7 rounded-xl bg-[#e7dec7] drop-shadow-md border-neutral-800/50 col-span-2 flex flex-col gap-y-10 justify-between"
-          >
-            <div className="flex flex-col gap-y-3.5">
-              <p className="font-bold text-xl text-black">
-                Reliable service uptime
-              </p>
-              <p className="font-medium text-black">
-                Outstanding service! They delivered high-quality web development
-                and provided excellent ongoing support. Worth every penny!
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <img
-                src="https://randomuser.me/api/portraits/men/71.jpg"
-                alt="James White"
-                className="h-10 w-10"
-              />
-              <p className="pt-2 text-sm font-semibold text-black">
-                James White
-              </p>
-              <p className="text-sm font-medium text-black">
-                COO at clipse Enterprises
-              </p>
-            </div>
-          </motion.div>
+
+            <motion.div
+              className="md:columns-2 lg:columns-3 gap-8 space-y-8"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={containerVariants}
+            >
+              {reviews.map((review, index) => (
+                <motion.div
+                  key={index}
+                  className="aspect-auto p-8 rounded-3xl bg-[#c8c1bc] dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-[#b6a397] dark:shadow-none"
+                  variants={cardVariants}
+                >
+                  <div className="flex gap-4">
+                    <img
+                      className="w-12 h-12 rounded-full"
+                      src={review.img}
+                      alt={review.name}
+                      width="200"
+                      height="200"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h6 className="text-lg font-medium text-black dark:text-black">
+                        {review.name}
+                      </h6>
+                      <p className="text-sm text-gray-500 dark:text-gray-300">
+                        {review.role}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-8 text-black">{review.text}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </section>
     </section>

@@ -1,59 +1,69 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhotoVideo } from "react-icons/fa";
-import { GrAppsRounded } from "react-icons/gr";
-import { IoIosApps } from "react-icons/io";
-import { RiPaintBrushLine, RiTShirt2Line, RiWebhookLine } from "react-icons/ri";
-import { TfiWrite } from "react-icons/tfi";
-import { VscGraph } from "react-icons/vsc";
-import { FiShoppingBag } from "react-icons/fi";
+import {
+  RiBuilding2Line,
+  RiHomeLine,
+  RiLightbulbFlashLine,
+  RiPaintBrushLine,
+  RiToolsLine,
+  RiTShirt2Line,
+  RiWebhookLine,
+} from "react-icons/ri";
 
 const Services = () => {
   const allServices = [
     {
       id: 1,
-      name: "Custom Cap Design",
+      name: "Residential Electrical Services",
       no: "01",
-      icon: <RiPaintBrushLine />,
+      icon: <RiHomeLine />,
       details:
-        "Create personalized caps that showcase your unique style. From trendy designs to brand logos, we bring your vision to life.",
+        "Safe and reliable electrical solutions for your home, including wiring, lighting, panel upgrades, and repairs.",
     },
     {
       id: 2,
-      name: "T-Shirt Printing",
+      name: "Commercial Electrical Services",
       no: "02",
-      icon: <RiTShirt2Line />,
+      icon: <RiBuilding2Line />,
       details:
-        "Get high-quality t-shirts printed with your custom designs. Perfect for personal use, events, or promoting your brand.",
+        "Professional electrical services for offices, shops, and businesses—ensuring efficiency, compliance, and safety.",
     },
     {
       id: 3,
-      name: "Bulk Apparel Orders",
+      name: "Electrical Maintenance & Repairs",
       no: "03",
-      icon: <FiShoppingBag />,
+      icon: <RiToolsLine />,
       details:
-        "Order caps and t-shirts in bulk with competitive pricing. Ideal for businesses, teams, or special events.",
+        "From minor fixes to preventive maintenance, our team keeps your systems running smoothly and safely.",
+    },
+    {
+      id: 4,
+      name: "Lighting Installation & Upgrades",
+      no: "04",
+      icon: <RiLightbulbFlashLine />,
+      details:
+        "Modern lighting solutions, including LED upgrades, outdoor lighting, and custom installations to brighten any space.",
     },
   ];
 
   return (
-    <section id="services">
-      <div className="text-center mb-14 mt-14 p-4">
-        <h1 className="font-bold text-center text-4xl">
-          Discover Our Services
+    <section id="services" className="py-14">
+      <div className="text-center  p-4">
+        <h1 className="font-bold pb-8 text-[#c00838] text-center text-4xl">
+          Our Step-by-Step Project Process
         </h1>
         <p className="text-[18px] text-black">
-          From crafting unique apparel to delivering exceptional customer
-          experiences, <br /> we provide solutions that drive your clothing
-          business forward.
+          At Hopwood Electrical, we make your experience smooth and stress-free
+          from start to finish. <br></br> Our expert team carefully manages
+          every stage, focusing on safety, quality, and your satisfaction
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mr-6">
         {allServices.map((service) => (
           <motion.div
             key={service.id}
-            className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-6"
+            className="bg-[#c8c1bc] rounded-md p-4 lg:w-96 m-6"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -80,7 +90,7 @@ const Services = () => {
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className="text-[#FD3B29] p-2 rounded-md">
+                <span className="text-[#c00838] p-2 rounded-md">
                   {service.icon}
                 </span>
                 {service.name}

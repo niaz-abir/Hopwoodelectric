@@ -1,13 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { GiBee } from "react-icons/gi";
-import { MdOutlinePermPhoneMsg } from "react-icons/md";
+import { MdElectricalServices, MdOutlinePermPhoneMsg } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
 import image3 from "../../public/images/clothlogo.png";
 import Image from "next/image";
+import { RiLightbulbFlashLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,16 +34,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-[#f3eddd] shadow-md shadow-[#b1aa9c] ml-0 lg:ml-6 mr-0 lg:mr-6 rounded-sm">
+    <div className="bg-[#DED6D1] shadow-md shadow-[#b1aa9c] ml-0 lg:ml-2 mr-0 lg:mr-2 rounded-sm">
       <nav className="mt-2">
-        <div className="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-4">
-          {/* <h1 className="flex gap-2 ml-0 lg:-ml-8 items-center text-2xl">
-            <GiBee size={35} />
-            <Link href="/">Clothings Bee</Link>
-          </h1> */}
+        <div className="max-w-8xl flex flex-wrap items-center  justify-between mx-auto p-4">
           <Link href="/">
             {" "}
-            <Image src={image3} alt="" height={40} width={200} />
+            <h1 className="font-bold text-3xl ml-2 lg:ml-8 flex gap-2 text-[#c00838] bg-[#e1dad6] p-2">
+              <RiLightbulbFlashLine />
+              Hopwood Electric
+            </h1>
           </Link>
 
           {/* <img src={image3} alt=""/> */}
@@ -63,51 +63,44 @@ const Navbar = () => {
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-black  ">
+            <ul className="font-medium flex flex-col mr-2 lg:mr-8 p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-black  ">
               <li>
-                <Link
-                  href="about-us"
+                <a
+                  href="/#activities"
                   className="block py-2 px-3 text-[20px] lg:w-full  w-36 text-black rounded md:border-0"
                 >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="/#services"
-                  className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
-                >
-                  TShirt
+                  Activities
                 </a>
               </li>
               <li>
                 <a
-                  href="/#package"
+                  href="/#Review"
                   className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
                 >
-                  Cap
+                  Review
                 </a>
               </li>
               <li>
                 <a
-                  href="/#package"
+                  href="/#faq"
                   className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
                 >
-                  Hoodie
+                  Faq
                 </a>
               </li>
+
               <li>
-                <Link
-                  href="contact-us"
+                <a
+                  href="/#contact-us"
                   className="block py-2 px-3 text-[20px] lg:w-full  w-36 text-black rounded md:border-0"
                 >
                   Contact Us
-                </Link>
+                </a>
               </li>
               <li>
                 <a
                   href="tel:+1 716 406 7972"
-                  className="p-2 flex items-center gap-2 text-[20px] lg:w-full bg-gradient-to-r from-[#da7c41] to-[#FD3B29]  w-56 text-black rounded md:border-0"
+                  className="p-2 flex items-center gap-2 text-[20px] lg:w-full bg-gradient-to-r from-[#c00838] to-[#dd1b4f]  w-56 text-white rounded md:border-0"
                 >
                   <MdOutlinePermPhoneMsg /> +1 (425) 548-4872
                 </a>
@@ -119,7 +112,7 @@ const Navbar = () => {
       {isScrolled && (
         <div className="fixed bottom-10 right-10 z-50">
           <a
-            href="https://wa.me/+8801845692696"
+            href="https://wa.me/+8801845672696"
             target="_blank"
             rel="noopener noreferrer"
             className=" p-3 rounded-full shadow-lg text-black"
